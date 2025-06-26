@@ -56,11 +56,6 @@ body {
 	overflow-x: hidden;
 }
 
-
-
-
-
-/* SIDEBAR */
 #sidebar {
 	position: fixed;
 	top: 0;
@@ -77,15 +72,7 @@ body {
 #sidebar::--webkit-scrollbar {
 	display: none;
 }
-/* Hide sidebar */
-#sidebar.hide {
-	width: 90px;
-}
 
-
-
-
-/* Updated Sidebar Brand Section */
 #sidebar .brand {
     font-size: 24px;
     font-weight: 700;
@@ -99,13 +86,6 @@ body {
     text-align: center;
     gap: 10px;
 }
-
-/* Dark Mode Fix */
-.dark #sidebar .brand {
-    color: white; /* Change text color to white */
-    background: var(--light); /* Optional: Adjust background color */
-}
-
 
 
     .separator {
@@ -121,7 +101,6 @@ body {
 
 #sidebar .brand .bx {
 	min-width: 60px;
-
 	display: flex;
 	justify-content: center;
 }
@@ -142,11 +121,10 @@ body {
 #sidebar .brand .text {
     margin-top: 10px;
     font-size: 35px;
-    font-weight: 600;
+    font-weight: 400;
     font-family: 'newsreader';
 }
 
-/* Dark Mode Adjustments */
 .dark #sidebar .brand {
     color: white;
 }
@@ -155,7 +133,6 @@ body {
     color: white;
 }
 
-/* Adjust side-menu top margin */
 #sidebar .side-menu {
     margin-top: 20px;
 }
@@ -202,16 +179,14 @@ body {
     display: flex;
     align-items: center;
     border-radius: 48px;
-    font-size: 16px;
+    font-size: 15px;
     font-family: 'inter';
     color: var(--dark);
-    white-space: normal; /* Allows text wrapping */
+    white-space: normal;
     overflow: hidden;
-    word-wrap: break-word; /* Ensures long words break properly */
-    padding: 10px; /* Adds padding for better text spacing */
+    word-wrap: break-word; 
+    padding: 10px; 
 }
-
-
 
 #sidebar .side-menu.top li.active a {
 	color: var(--primary);
@@ -232,16 +207,6 @@ body {
 	justify-content: center;
 }
 
-
-/* SIDEBAR */
-
-
-
-
-
-
-
-/* CONTENT */
 #content {
     position: relative;
     width: calc(100% - 280px);
@@ -253,7 +218,6 @@ body {
     left: 60px;
 }
 
-/* NAVBAR */
 #content nav {
     height: 56px;
     background: var(--light);
@@ -372,15 +336,6 @@ body {
     border-radius: 50%;
     transition: all .3s ease;
 }
-/* Dark Mode - Make Button White */
-.dark #content nav .switch-mode::before {
-    background: rgb(255, 255, 255);
-}
-#content nav #switch-mode:checked + .switch-mode::before {
-    left: calc(100% - (25px - 4px) - 2px);
-}
-
-
 
 .dark .dropdown-menu {
     background: black;
@@ -391,7 +346,7 @@ body {
 .dark .dropdown-menu a:hover {
     background: #333;
 }
-/* Improved Profile Dropdown */
+
 .profile-dropdown {
     position: relative;
     display: inline-block;
@@ -464,11 +419,6 @@ body {
     transform: scale(0.98);
 }
 
-
-
-
-
-/* MAIN */
 #content main {
 	width: 100%;
 	padding: 36px 24px;
@@ -524,8 +474,6 @@ body {
 }
 
 
-
-
 #content main .box-info {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -576,10 +524,6 @@ body {
     font-family: 'inter';
 	color: var(--dark);	
 }
-
-
-
-
 
 #content main .table-data {
 	display: flex;
@@ -693,10 +637,6 @@ body {
 #content main .table-data .todo .todo-list li:last-child {
 	margin-bottom: 0;
 }
-/* MAIN */
-/* CONTENT */
-
-
 
 .container {
     width: 60%;
@@ -822,65 +762,6 @@ body {
     border-left: 1px solid #ccc;
 }
 
-/* Dark Mode */
-.dark .container {
-    background: #060714;
-    color: white;
-	border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3);
-}
-.dark .profile-section img {
-    border: 2px solid #060714;
-}
-.dark .employee-info {
-    background: #060714;
-    color: white;
-
-}
-.dark .employee-title,
-.dark .employee-subtitle,
-.dark .employee-subtitle2,
-.dark .profile-info h2,
-.dark .form-group label {
-    color: white;
-}
-.dark .form-group input, 
-.dark .form-group select {
-    background: #060714;
-    color: white;
-    border: 1px solid #666;
-}
-.dark .password-container .input-wrapper {
-    border: 1px solid #666;
-}
-.dark .eye-icon {
-    background: #555;
-    border-left: 1px solid #666;
-}
-
-.form-row {
-    display: flex;
-    gap: 10px;
-}
-.form-row .form-group {
-    flex: 1;
-}
-
-.save-btn {
-    background: #213555; /* Dark Blue */
-    color: white;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    width: 100%;
-    font-size: 16px;
-    transition: background 0.3s ease;
-}
-
-.save-btn:hover {
-    background: #1a2b44; /* Slightly darker shade on hover */
-}
 
 @media screen and (max-width: 768px) {
     .container {
@@ -893,21 +774,17 @@ body {
         width: 90%;
         display: flex;
         flex-direction: column;
-        align-items: center; /* Center items horizontally */
-        justify-content: center; /* Center items vertically */
-        text-align: center; /* Ensure text is centered */
-        margin: 0 auto; /* Center the div itself */
+        align-items: center; 
+        justify-content: center; 
+        text-align: center; 
+        margin: 0 auto; 
     }
     .employee-title, 
     .employee-subtitle, 
     .employee-subtitle2 {
-        text-align: center; /* Ensure text inside is centered */
-        margin-left: 0; /* Remove any left margin */
-    }
+        text-align: center; 
+        margin-left: 0; 
 }
-
-
-
 
 
 @media screen and (max-width: 576px) {
@@ -954,4 +831,3 @@ body {
 		min-width: 420px;
 	}
 }
-
