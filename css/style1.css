@@ -665,6 +665,30 @@ body {
     margin-bottom: 10px;
 }
 
+.detail-card {
+  margin-bottom: 20px;
+}
+
+.detail-title {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+p {
+  margin: 4px 0;
+  font-weight: bold;
+font-family: 'newsreader';
+    
+}
+.label {
+  font-weight: 600;  
+    font-family: 'inter';
+}
+
+
+
+
+
 .profile-info p {
     font-size: 16px;
     font-family: 'inter';
